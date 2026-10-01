@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_2/project_2.srcs/sim_1/new/tb_pwm_rgb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_pwm_rgb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

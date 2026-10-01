@@ -1,0 +1,346 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Dec 11 13:52:55 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35436
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1208.441 ; gain = 492.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'rd_en', assumed default net type 'wire' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_gpio.sv:59]
+INFO: [Synth 8-11241] undeclared symbol 'rd_en', assumed default net type 'wire' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_timer.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_mcs_0' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.runs/synth_1/.Xil/Vivado-7940-DESKTOP-K0PKL6F/realtime/microblaze_mcs_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_mcs_0' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.runs/synth_1/.Xil/Vivado-7940-DESKTOP-K0PKL6F/realtime/microblaze_mcs_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'APB_Bridge' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_bridge.sv:2]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter BRG_BASE bound to: -1073741824 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'APB_master' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/ABP_master.sv:1]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'APB_master' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/ABP_master.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'APB_Bridge' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_bridge.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'APB_interconnect' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_interconnect.sv:3]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter NUM_PERIPHERALS bound to: 64 - type: integer 
+	Parameter NUM_REG_PERIPHERAL bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'APB_interconnect' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_interconnect.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'APB_gpio' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_gpio.sv:4]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'APB_gpio' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_gpio.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'APB_timer' [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_timer.sv:6]
+	Parameter DW bound to: 32 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'APB_timer' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/APB_timer.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/top.sv:1]
+WARNING: [Synth 8-7129] Port pADDR[31] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[30] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[29] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[28] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[27] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[26] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[25] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[24] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[23] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[22] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[21] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[20] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[19] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[18] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[17] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[16] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[15] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[14] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[13] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[12] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[11] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[10] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[9] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[8] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[7] in module APB_timer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[31] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[30] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[29] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[28] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[27] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[26] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[25] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[24] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[23] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[22] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[21] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[20] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[19] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[18] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[17] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[16] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[15] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[14] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[13] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[12] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[11] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[10] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[9] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[8] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pADDR[7] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[31] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[30] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[29] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[28] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[27] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[26] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[25] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[24] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[23] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[22] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[21] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[20] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[19] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[18] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[17] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pWDATA[16] in module APB_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[3] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[2] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[1] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[0] in module APB_Bridge is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1321.664 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1321.664 ; gain = 606.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1321.664 ; gain = 606.191
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1321.664 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.gen/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0/microblaze_mcs_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [c:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.gen/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0/microblaze_mcs_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/constrs_1/imports/DN/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/constrs_1/imports/DN/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/constrs_1/imports/DN/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1359.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1359.664 ; gain = 644.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1359.664 ; gain = 644.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1359.664 ; gain = 644.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'APB_master'
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'apb_bridge_inst'. This will prevent further optimization [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/top.sv:65]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_apb_interconnect'. This will prevent further optimization [C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.srcs/sources_1/imports/new/top.sv:103]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                   SETUP |                              010 |                               01
+                  ACCESS |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'APB_master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1359.664 ; gain = 644.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port io_byte_enable[3] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[2] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[1] in module APB_Bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_byte_enable[0] in module APB_Bridge is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1372.402 ; gain = 656.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1529.414 ; gain = 813.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1550.539 ; gain = 835.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1550.539 ; gain = 835.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |microblaze_mcs_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |microblaze_mcs |     1|
+|2     |BUFG           |     1|
+|3     |CARRY4         |    16|
+|4     |LUT1           |     3|
+|5     |LUT2           |    35|
+|6     |LUT3           |     6|
+|7     |LUT4           |     3|
+|8     |LUT5           |    21|
+|9     |LUT6           |    73|
+|10    |FDCE           |     1|
+|11    |FDRE           |    87|
+|12    |IBUF           |    18|
+|13    |OBUF           |    16|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1775.594 ; gain = 1022.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1775.594 ; gain = 1060.121
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1775.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1775.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 96a0a04b
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1775.594 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_8again/project_8again.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 13:53:40 2025...

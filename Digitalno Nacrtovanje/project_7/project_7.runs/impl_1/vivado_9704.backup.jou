@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Dec  4 14:07:29 2025
+# Process ID         : 9704
+# Current directory  : C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_7/project_7.runs/impl_1
+# Command line       : vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file           : C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_7/project_7.runs/impl_1/top.vdi
+# Journal file       : C:/Users/larci/iCloudDrive/FAKS/3. LETNIK 1. SEMESTER/DN/project_7/project_7.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-K0PKL6F
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency      : 2803 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16844 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28655 MB
+# Available Virtual  : 7321 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
